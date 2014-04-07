@@ -1,10 +1,9 @@
-n = 1
+x = 20
 a = 0
-while a < 19:
-    n /= 20
-    n += 19
-    n *= 20
-    for i in range(1, 21):
+n = 0
+while a < x-1:
+    n += 19*20
+    for i in range(1, x+1):
         if n % i != 0:
             a = 0
             break
