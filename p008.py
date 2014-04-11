@@ -1,3 +1,6 @@
+import time
+begin_time = time.time()
+
 x = '''73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
@@ -21,13 +24,13 @@ x = '''73167176531330624919225119674426574742355349194934
 x = x.replace('\n', '')
 i = 0
 prs = []
+
 while i+5 < len(x):
-    a1 = i
-    a2 = i + 1
-    a3 = i + 2
-    a4 = i + 3
-    a5 = i + 4
-    pr = int(x[a1]) * int(x[a2]) * int(x[a3]) * int(x[a4]) * int(x[a5])
+    pr = 1
+    for n in range(i, i+5):
+        pr *= int(x[n])
     prs.append(pr)
-    i += 1
+    i +=1
 print  max(prs)
+end_time = time.time()
+print 'time spent: %.2f seconds' % (end_time - begin_time)
