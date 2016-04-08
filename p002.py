@@ -9,4 +9,4 @@ for i in f:
         result += i
 
 
-print result
+print(result)
