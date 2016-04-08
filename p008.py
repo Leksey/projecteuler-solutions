@@ -31,6 +31,6 @@ while i+5 < len(x):
         pr *= int(x[n])
     prs.append(pr)
     i +=1
-print  max(prs)
+print(max(prs))
 end_time = time.time()
-print 'time spent: %.2f seconds' % (end_time - begin_time)
+print('time spent: %.2f seconds' % (end_time - begin_time))
